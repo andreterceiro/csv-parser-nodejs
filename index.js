@@ -16,9 +16,9 @@ fs.createReadStream("./base.csv")
     console.log(adjustCellphone(result[0]['Telefone(s)']));
   });
 
-  function adjustCellphone(cellphone) {
-    return "+55" + cellphone.substr(10,14)
+function adjustCellphone(cellphone) {
+  return "+55" + cellphone.substr(10,14)
         .replace(')', '')
         .replace(' ', '')
         .replace('-', ''); 
-  }
+}
